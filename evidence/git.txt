@@ -1,0 +1,22 @@
+$ git --version
+git version 2.56.0.windows.4
+
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=ksw6599
+user.email=91269255+ksw6599@users.noreply.github.com
+init.defaultbranch=main
+remote.origin.url=https://github.com/ksw6599/Codyssey_sunuong.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+$ git remote -v
+origin	https://github.com/ksw6599/Codyssey_sunuong.git (fetch)
+origin	https://github.com/ksw6599/Codyssey_sunuong.git (push)
+
+$ git log -1 --oneline origin/main
+f7245a1 Initial commit
