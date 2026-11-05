@@ -394,7 +394,7 @@ $ git ls-remote origin refs/heads/main
 
 ## 시각적 증거 수집 상태
 
-- 웹 접속은 HTTP 응답으로 검증했다. 주소창이 포함된 스크린샷은 아직 수집하지 못했다.
+- 웹 접속은 HTTP 응답으로 검증했다. [주소창 포함 Chrome 캡처](browser-port.png)에서 호스트 포트 8781과 NGINX 정상 응답 페이지를 확인할 수 있다.
 - VS Code의 로그인 세션은 [GitHub Authentication 진단 로그](vscode-authentication.txt)에서 확인했다. [GitHub Pull Requests와 통합 터미널 화면](vscode-github.png)에 원격 저장소 주소와 main 브랜치 동기화 상태를 함께 기록했다.
 
 ## VS Code 로그인 세션 확인
