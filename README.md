@@ -23,7 +23,7 @@ Windows에서 WSL 2로 Linux 작업 환경을 구성했다. 터미널로 파일�
 | 바인드 마운트 | 호스트의 `index.html`만 바꾸자 컨테이너를 재시작하지 않아도 응답이 `host version 1`에서 `host version 2`로 바뀌었다. |
 | Docker 볼륨 | 기록한 컨테이너를 삭제한 뒤 같은 볼륨을 읽기 전용으로 연결한 새 컨테이너에서 `e11-volume-record`를 읽었다. |
 | Git과 GitHub | 로컬 저장소에 작성자 정보와 기본 브랜치 `main`을 설정하고, 기존 GitHub 저장소를 `origin`으로 연결했다. [Git 설정과 연결 로그](evidence/git.txt) |
-| VS Code | 로컬 작업 폴더를 VS Code로 열었다. VS Code 내부의 GitHub 계정 로그인은 확인 대기 중이다. |
+| VS Code | GitHub Pull Requests 화면과 통합 터미널에서 원격 저장소·브랜치 상태를 확인했다. GitHub Authentication 진단 로그에서 로그인 세션 1개를 확인했다. [연동 화면](evidence/vscode-github.png) · [로그인 확인 기록](evidence/vscode-authentication.txt) |
 
 [명령과 출력을 코드블록으로 정리한 수행 기록](evidence/execution.md)에서 터미널 조작, 권한 변경, Docker 운영, 포트 매핑, 마운트, 볼륨, Git 설정을 확인할 수 있다. [원본 실행 로그](evidence/verification.log)는 `set -x`를 켜서 기록했다. 로컬 사용자 폴더명은 가렸다.
 
@@ -41,9 +41,11 @@ Windows에서 WSL 2로 Linux 작업 환경을 구성했다. 터미널로 파일�
 - [x] Git 작성자·기본 브랜치 설정과 원격 저장소 연결
 - [x] 트러블슈팅과 재현 절차
 - [ ] 포트가 포함된 주소창과 웹 페이지를 함께 보여 주는 스크린샷
-- [ ] VS Code의 GitHub 로그인과 저장소 연동 화면
+- [x] VS Code의 GitHub 로그인과 저장소 연동 화면
 
-포트 매핑의 HTTP 응답 증거는 확보했다. 지문의 주소창 포함 캡처와 VS Code 로그인 화면은 추가 수집이 필요하다.
+포트 매핑의 HTTP 응답과 VS Code 연동 증거는 확보했다. 지문의 주소창 포함 웹 접속 캡처는 추가 수집이 필요하다.
+
+![VS Code의 GitHub Pull Requests와 통합 터미널에서 확인한 원격 저장소 및 main 브랜치](evidence/vscode-github.png)
 
 ## 재현 방법
 
