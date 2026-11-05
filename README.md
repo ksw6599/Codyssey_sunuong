@@ -25,7 +25,25 @@ Windows에서 WSL 2로 Linux 작업 환경을 구성했다. 터미널로 파일�
 | Git과 GitHub | 로컬 저장소에 작성자 정보와 기본 브랜치 `main`을 설정하고, 기존 GitHub 저장소를 `origin`으로 연결했다. [Git 설정과 연결 로그](evidence/git.txt) |
 | VS Code | 로컬 작업 폴더를 VS Code로 열었다. VS Code 내부의 GitHub 계정 로그인은 확인 대기 중이다. |
 
-[실행 명령과 전체 출력](evidence/verification.log)은 `set -x`를 켜서 기록했다. 로컬 사용자 폴더명은 가렸다.
+[명령과 출력을 코드블록으로 정리한 수행 기록](evidence/execution.md)에서 터미널 조작, 권한 변경, Docker 운영, 포트 매핑, 마운트, 볼륨, Git 설정을 확인할 수 있다. [원본 실행 로그](evidence/verification.log)는 `set -x`를 켜서 기록했다. 로컬 사용자 폴더명은 가렸다.
+
+## 제출 체크리스트
+
+- [x] 프로젝트 개요와 실행 환경
+- [x] 터미널 기본 조작 명령과 출력
+- [x] 파일과 디렉터리의 권한 변경 전후
+- [x] Docker 설치 점검과 기본 운영 명령
+- [x] hello-world 및 Ubuntu 실행, exec와 attach 비교
+- [x] 직접 작성한 Dockerfile, 웹 서버 소스와 빌드 결과
+- [x] 8781과 8782 포트의 HTTP 200 응답
+- [x] 바인드 마운트 변경 전후 비교
+- [x] 컨테이너 삭제 후 Docker 볼륨 데이터 유지
+- [x] Git 작성자·기본 브랜치 설정과 원격 저장소 연결
+- [x] 트러블슈팅과 재현 절차
+- [ ] 포트가 포함된 주소창과 웹 페이지를 함께 보여 주는 스크린샷
+- [ ] VS Code의 GitHub 로그인과 저장소 연동 화면
+
+포트 매핑의 HTTP 응답 증거는 확보했다. 지문의 주소창 포함 캡처와 VS Code 로그인 화면은 추가 수집이 필요하다.
 
 ## 재현 방법
 
